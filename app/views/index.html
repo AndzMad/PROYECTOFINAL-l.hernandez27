@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heladería</title>
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bienvenida-page">
+    <div class="bienvenida-container">
+      <div class="logo-container">
+        <img
+          src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}"
+          alt="Logo Heladería MAD"
+          class="logo"
+        />
+      </div>
+      <a href="/login" class="boton">INGRESAR</a>
+    </div>
+  </body>
+</html>

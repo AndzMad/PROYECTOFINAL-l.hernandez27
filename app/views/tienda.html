@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link
+        href="{{ url_for('static', filename='css/style.css') }}"
+        rel="stylesheet"
+    />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img
+                src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}"
+                alt="Logo Heladería MAD"
+                class="logo"
+            />
+        </div>
+
+        <div class="store-section">
+            <h1 class="section-title">Lista de Productos</h1>
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Producto</th>
+                            <th>Precio</th>
+                            <th>Ingredientes</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for producto in productos %}
+                        <tr>
+                            <td>{{ producto.get_nombre() }}</td>
+                            <td>${{ producto.get_precio_publico() | int }}</td>
+                            <td>
+                                <ul class="ingredients-list">
+                                    {% for ing in producto.get_ingredientes() %}
+                                    <li>{{ ing.get_nombre() }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="{{ url_for('home.venta_producto', nombre=producto.get_nombre()) }}" class="action-button">Vender</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

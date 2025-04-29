@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Autorizado</title>
+    <link
+        href="{{ url_for('static', filename='css/style.css') }}"
+        rel="stylesheet"
+    />
+</head>
+<body class="dashboard-page unauthorized-page">
+    <div class="dashboard-container unauthorized-container">
+        <div class="logo-container">
+            <img
+                src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}"
+                alt="Logo Heladería MAD"
+                class="logo"
+            />
+        </div>
+        <div class="unauthorized-content">
+            <h1 class="section-title error">ZONA NO AUTORIZADA</h1>
+            <p class="error-message">Lo sentimos, no tienes permiso para acceder a esta sección.</p>
+            <div class="actions-container">
+                <a href="/login" class="action-button primary">HOME</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

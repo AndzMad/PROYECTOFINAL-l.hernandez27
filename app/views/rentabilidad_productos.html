@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentabilidad de los Productos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}" alt="Logo Heladería MAD"
+                class="logo" />
+        </div>
+
+        <div class="profitability-section">
+            <h1 class="section-title">Rentabilidad de Todos los Productos</h1>
+
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Rentabilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for producto in productos_rentabilidad %}
+                        <tr>
+                            <td>{{ producto.nombre }}</td>
+                            <td>{{ producto.rentabilidad }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1276 @@
+/* Fondo general con tono cálido suave */
+body.productos-page {
+  font-family: Arial, sans-serif;
+  background-color: #fff3ea; /* color similar al fondo del logo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor horizontal con centrado vertical */
+.layout-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Logo */
+.logo-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Contenedor de productos */
+.productos {
+  flex: 1;
+  max-width: 1000px;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffaf8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px 22px;
+  border: 1px solid #f0ddd4;
+  text-align: left;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f9c1b1; /* tono más coral pastel */
+  color: #5c4033;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #fff1ec;
+}
+
+/* Título */
+h1 {
+  color: #a47c65;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+strong {
+  color: #a47c65;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Lista de ingredientes */
+ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+/* Botón */
+a.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fd7139; /* naranja vibrante */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a.boton:hover {
+  background-color: #f9a03f; /* tono más suave */
+}
+
+/* .bienvenida {
+  flex: 1;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bienvenida .boton {
+  margin-top: 20px;
+} */
+body.bienvenida-page {
+  font-family: Arial, sans-serif;
+  background-color: #fff3ea;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.bienvenida-container {
+  text-align: center;
+}
+
+.bienvenida-container .logo {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de botones centrados */
+.bienvenida {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos de forma vertical */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  }
+
+/* Estilo de los botones */
+a.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fd7139; /* naranja vibrante */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a.boton:hover {
+  background-color: #f9a03f; /* tono más suave */
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+  gap: 15px;
+}
+
+.bienvenida form button {
+  /* Estilos para el botón "Loguear" */
+  padding: 10px 20px;
+  background-color: #a47c65; /* Un tono marrón similar al texto del logo */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bienvenida form button:hover {
+  background-color: #5c4033; /* Tono más oscuro al pasar el ratón */
+}
+
+.bienvenida a.boton {
+  /* Estilos para el botón "VISITANTE" - los que ya tenías deberían funcionar */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fd7139; /* naranja vibrante */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  
+}
+
+.bienvenida a.boton:hover {
+  background-color: #f9a03f; /* tono más suave */
+}
+
+/* nuevooooooooooo */
+
+
+/* Estilos generales para la página de login */
+body.login-page {
+  background-color: #f8f0e3; /* Un fondo diferente para la página de login */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.login-title {
+  color: #a47c65;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea las etiquetas a la izquierda */
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #5c4033;
+  font-weight: bold;
+}
+
+.login-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box; /* Evita que el padding aumente el ancho */
+}
+
+.login-button {
+  background-color: #fd7139;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #f9a03f;
+}
+
+.login-options {
+  margin-top: 20px;
+}
+
+.visitor-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a08575; /* Un tono diferente para el visitante */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.visitor-button:hover {
+  background-color: #8c6e5b;
+}
+
+.error-messages {
+  margin-top: 20px;
+  color: #f44336; /* Color rojo para los errores */
+  text-align: center;
+}
+
+.error-message {
+  margin-bottom: 5px;
+}
+
+/* Estilos generales para la página del dashboard */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar el contenido horizontalmente */
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Ajusta el ancho máximo según necesites */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para el menú sencillo */
+body.simple-menu-page .simple-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+body.simple-menu-page .menu-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+body.simple-menu-page .menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.simple-menu-page .menu-item {
+  margin-bottom: 10px;
+}
+
+body.simple-menu-page .menu-link {
+  display: block;
+  padding: 12px 15px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+body.simple-menu-page .menu-link:hover {
+  background-color: #ddd;
+}
+
+/* Estilos específicos para ciertos enlaces (opcional) */
+body.simple-menu-page .menu-link.profile {
+  /* Estilos para el enlace de perfil */
+}
+
+body.simple-menu-page .menu-link.logout {
+  background-color: #f44336;
+  color: white;
+}
+
+body.simple-menu-page .menu-link.logout:hover {
+  background-color: #d32f2f;
+}
+
+/* Puedes añadir más estilos específicos para otros enlaces aquí usando las clases como .store, .products, etc. */
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Ajusta el ancho máximo según necesites */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección del perfil */
+body.dashboard-page .profile-section {
+  width: 100%; /* Ocupa todo el ancho del dashboard-container */
+  padding: 20px 0; /* Ajusta el padding vertical */
+  text-align: left; /* Alinea el texto a la izquierda dentro de la sección */
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el título del perfil */
+}
+
+body.dashboard-page .info-list {
+  display: flex;
+  flex-direction: column; /* Apila la información verticalmente */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+body.dashboard-page .info-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .info-item:last-child {
+  border-bottom: none;
+}
+
+body.dashboard-page .info-label {
+  font-weight: bold;
+  color: #555;
+  width: 120px; /* Ajusta el ancho de las etiquetas */
+  text-align: left;
+}
+
+body.dashboard-page .info-value {
+  color: #777;
+  flex-grow: 1;
+  text-align: left;
+}
+
+body.dashboard-page .actions-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+body.dashboard-page .action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+body.dashboard-page .action-button:first-child {
+  background-color: #007bff; /* Un color primario */
+  color: white;
+}
+
+body.dashboard-page .action-button:first-child:hover {
+  background-color: #0056b3;
+}
+
+body.dashboard-page .action-button.logout {
+  background-color: #dc3545; /* Un color de advertencia/error */
+  color: white;
+}
+
+body.dashboard-page .action-button.logout:hover {
+  background-color: #c82333;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 800px; /* Ajusta el ancho máximo para la tabla */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de productos */
+body.dashboard-page .products-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es muy ancha */
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 900px; /* Ajusta el ancho máximo para la tabla de la tienda */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de la tienda */
+body.dashboard-page .store-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto;
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+body.dashboard-page .ingredients-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+body.dashboard-page .action-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff; /* Un color primario */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+}
+
+body.dashboard-page .action-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Ajusta el ancho máximo para la tabla de calorías */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de calorías */
+body.dashboard-page .calories-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto;
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+body.dashboard-page .no-data {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Ajusta el ancho máximo para la tabla de rentabilidad */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de rentabilidad */
+body.dashboard-page .profitability-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto;
+  margin-bottom: 20px; /* Espacio entre la tabla y el botón */
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+body.dashboard-page .actions-container {
+  display: flex;
+  justify-content: center; /* Centra el botón */
+}
+
+body.dashboard-page .action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  background-color: #28a745; /* Un color verde para la rentabilidad */
+  color: white;
+}
+
+body.dashboard-page .action-button:hover {
+  background-color: #1e7e34;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Ajusta el ancho máximo para la tabla de costos */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de costo de producción */
+body.dashboard-page .production-cost-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto;
+  margin-bottom: 20px; /* Espacio entre la tabla y los botones */
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+body.dashboard-page .actions-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Centra los botones */
+}
+
+body.dashboard-page .action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  background-color: #ffc107; /* Un color amarillo/ámbar para el costo */
+  color: #333;
+}
+
+body.dashboard-page .action-button:hover {
+  background-color: #e0a800;
+}
+
+body.dashboard-page .action-button.secondary {
+  background-color: #6c757d; /* Un color gris para el botón secundario */
+  color: white;
+}
+
+body.dashboard-page .action-button.secondary:hover {
+  background-color: #545b62;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Ajusta el ancho máximo para la sección de reabastecimiento */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de reabastecimiento */
+body.dashboard-page .restock-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .restock-form {
+  margin-top: 20px;
+}
+
+body.dashboard-page .ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+
+body.dashboard-page .ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .ingredient-item:last-child {
+  border-bottom: none;
+}
+
+body.dashboard-page .ingredient-info {
+  flex-grow: 1;
+}
+
+body.dashboard-page .ingredient-name strong {
+  font-weight: bold;
+  color: #555;
+}
+
+body.dashboard-page .restock-control label {
+  margin-right: 10px;
+  color: #777;
+}
+
+body.dashboard-page .action-button.primary {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  background-color: #007bff; /* Un color primario */
+  color: white;
+  margin-top: 20px;
+}
+
+body.dashboard-page .action-button.primary:hover {
+  background-color: #0056b3;
+}
+
+body.dashboard-page .no-data {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos generales del dashboard (asegúrate de tener estos o similares) */
+body.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 800px; /* Ajusta el ancho máximo para la tabla de ingredientes */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la sección de ingredientes */
+body.dashboard-page .ingredients-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto;
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+body.dashboard-page .no-data {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para la sección de la tienda (actualizados con colores del dashboard) */
+body.dashboard-page .store-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+body.dashboard-page .section-title {
+  color: #333; /* Título principal en gris oscuro */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dashboard-page .data-table {
+  overflow-x: auto;
+}
+
+body.dashboard-page .data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff; /* Fondo blanco para la tabla */
+  border-radius: 8px; /* Bordes redondeados para la tabla */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sutil sombra */
+}
+
+body.dashboard-page .data-table th,
+body.dashboard-page .data-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee; /* Líneas divisorias más claras */
+}
+
+body.dashboard-page .data-table th {
+  background-color: #f8f9fa; /* Fondo gris claro para los encabezados */
+  font-weight: bold;
+  color: #555; /* Texto del encabezado en gris */
+}
+
+body.dashboard-page .data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Fondo ligeramente gris para filas pares */
+}
+
+body.dashboard-page .data-table tbody tr:hover {
+  background-color: #e9ecef; /* Fondo al pasar el ratón */
+}
+
+body.dashboard-page .ingredients-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  color: #777; /* Color de la lista de ingredientes */
+  font-size: 0.9em;
+}
+
+body.dashboard-page .action-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff; /* Color primario azul */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+  border: 1px solid #007bff; /* Añadido un borde sutil */
+}
+
+body.dashboard-page .action-button:hover {
+  background-color: #0056b3; /* Oscurecer al pasar el ratón */
+  border-color: #0056b3;
+}
+
+/* Estilos para la sección de venta de producto */
+body.dashboard-page .sale-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center; /* Centrar el contenido de la sección de venta */
+}
+
+body.dashboard-page .section-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+body.dashboard-page .sale-details {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+body.dashboard-page .product-name {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+body.dashboard-page .sale-result {
+  color: #28a745; /* Color verde para un resultado exitoso */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+body.dashboard-page .sale-result.error {
+  color: #dc3545; /* Color rojo para un resultado de error */
+}
+
+body.dashboard-page .actions-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+body.dashboard-page .action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  background-color: #007bff; /* Color primario azul */
+  color: white;
+}
+
+body.dashboard-page .action-button:hover {
+  background-color: #0056b3;
+}
+
+body.dashboard-page .action-button.secondary {
+  background-color: #6c757d; /* Color gris para el botón secundario */
+  color: white;
+}
+
+body.dashboard-page .action-button.secondary:hover {
+  background-color: #545b62;
+}
+

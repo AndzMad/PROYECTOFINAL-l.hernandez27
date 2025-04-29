@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de Producto</title>
+    <link
+        href="{{ url_for('static', filename='css/style.css') }}"
+        rel="stylesheet"
+    />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img
+                src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}"
+                alt="Logo Heladería MAD"
+                class="logo"
+            />
+        </div>
+
+        <div class="sale-section">
+            <h1 class="section-title">Venta de Producto</h1>
+            <div class="sale-details">
+                <p class="product-name"><strong>Producto:</strong> {{ nombre }}</p>
+                {% if resultado_venta %}
+                <p class="sale-result">{{ resultado_venta }}</p>
+                {% endif %}
+            </div>
+            <div class="actions-container">
+                <form action="{{ url_for('home.tienda') }}" method="get">
+                    <button type="submit" class="action-button">Volver a la Tienda</button>
+                </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

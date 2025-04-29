@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Perfil</title>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img
+                src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}"
+                alt="Logo Heladería MAD"
+                class="logo"
+            />
+        </div>
+
+        <div class="profile-section">
+            <h1 class="section-title">TU PERFIL</h1>
+            <div class="info-list">
+                <div class="info-item">
+                    <span class="info-label">ID:</span>
+                    <span class="info-value">{{ current_user.id }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Usuario:</span>
+                    <span class="info-value">{{ current_user.username }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contraseña:</span>
+                    <span class="info-value">{{ current_user.password }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Es Admin:</span>
+                    <span class="info-value">{{ current_user.es_admin }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Es Empleado:</span>
+                    <span class="info-value">{{ current_user.es_empleado }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

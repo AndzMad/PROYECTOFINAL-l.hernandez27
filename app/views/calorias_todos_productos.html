@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorías de los Productos</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}" alt="Logo Heladería MAD"
+                class="logo" />
+        </div>
+
+        <div class="calories-section">
+            <h1 class="section-title">Calorías de Todos los Productos</h1>
+
+            {% if calorias %}
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Producto</th>
+                            <th>Calorías</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in calorias %}
+                        <tr>
+                            <td>{{ item.nombre }}</td>
+                            <td>{{ item.calorias }} kcal</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <p class="no-data">No hay productos disponibles.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

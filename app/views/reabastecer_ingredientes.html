@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reabastecer Ingredientes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}" alt="Logo Heladería MAD"
+                class="logo" />
+        </div>
+
+        <div class="restock-section">
+            <h1 class="section-title">Reabastecer Ingredientes</h1>
+
+            {% if ingredientes %}
+            <form method="POST" class="restock-form">
+                <ul class="ingredients-list">
+                    {% for ingrediente_id, ingrediente in ingredientes.items() %}
+                    <li class="ingredient-item">
+                        <div class="ingredient-info">
+                            <span class="ingredient-name"><strong>Nombre:</strong> {{ ingrediente.nombre }}</span>
+                        </div>
+                        <div class="restock-control">
+                            <label for="restock_{{ ingrediente_id }}">Reabastecer:</label>
+                            <input type="checkbox" id="restock_{{ ingrediente_id }}" name="restock_{{ ingrediente_id }}" value="1" checked>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </form>
+            {% else %}
+            <p class="no-data">No hay ingredientes disponibles.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

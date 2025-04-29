@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costo de Producción</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo_heladeria_mad.png') }}" alt="Logo Heladería MAD"
+                class="logo" />
+        </div>
+
+        <div class="production-cost-section">
+            <h1 class="section-title">Costo de Producción de Todos los Productos</h1>
+
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Costo de Producción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for producto in productos_costo %}
+                        <tr>
+                            <td>{{ producto.nombre }}</td>
+                            <td>{{ producto.costo_produccion }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
